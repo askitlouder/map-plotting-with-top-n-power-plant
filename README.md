@@ -12,16 +12,16 @@ The challenge consists of the following requirements:
   • Build JUST a python backend that backs this map with a REST API.
   • Bonus: deployment of the solution in a cloud service
 
-Once you cone the repo and integrate the environment based on requirement.txt, then execute main.py by setting up the value of N. One Excel file is also present, which use as input.
+Once you clone the repo and integrate the environment based on requirement.txt, then execute main.py by setting up the value of N. One Excel file is also present, which use as input.
 
-open terminal and run
+open the terminal and run
 uvicorn run main:app --host:0.0.0.0 --port:8009(set port as per need)
 
 once the application starts running after,
 open the browser, 
 http://localhost:8009/docs   [port, set as per your need]
 once open, then drag the available function and click on try it out.
-put the value of N in an integer.
+put the value of N in an integer then press execute.
 and output will be saved in the working dir
 
 
