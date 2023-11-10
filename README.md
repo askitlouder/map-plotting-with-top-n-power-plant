@@ -12,5 +12,5 @@ The challenge consists of the following requirements:
 • Build JUST a python backend that backs this map with a REST API.
 • Bonus: deployment of the solution in a cloud service
 
-Once you cone the repo and integrate the environment based on requirement.txt, then execute main.py by setting up the value of N. 
+Once you cone the repo and integrate the environment based on requirement.txt, then execute main.py by setting up the value of N. One excel file is also present, which use as a input.
 The output store in the form the HTML in your working directory.
