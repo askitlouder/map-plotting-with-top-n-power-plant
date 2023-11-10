@@ -1,0 +1,2181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a572ad2d1153e5b9a7cda2c22338c85f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a572ad2d1153e5b9a7cda2c22338c85f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a572ad2d1153e5b9a7cda2c22338c85f = L.map(
+                "map_a572ad2d1153e5b9a7cda2c22338c85f",
+                {
+                    center: [36.77901450999998, -87.64468073],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2a35ae8c96f0207a8b9030a3bc6f347c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_2a35ae8c96f0207a8b9030a3bc6f347c.addTo(map_a572ad2d1153e5b9a7cda2c22338c85f);
+    
+            var marker_cluster_e8eaaf8feb04490889f1550f8786cbba = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_45c45a9e5685bd79072f7c5a816762d8 = L.marker(
+                [33.3881, -112.8617],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_d29d59b98ad27678123e06a5a79308f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55dd1480200375b31df070b4fe76aa1e = $(`<div id="html_55dd1480200375b31df070b4fe76aa1e" style="width: 100.0%; height: 100.0%;">Plant_name:Palo Verde Plant annual net generation (MWh): 31629861.999 Plant state abbreviation: AZ</div>`)[0];
+                popup_d29d59b98ad27678123e06a5a79308f0.setContent(html_55dd1480200375b31df070b4fe76aa1e);
+            
+        
+
+        marker_45c45a9e5685bd79072f7c5a816762d8.bindPopup(popup_d29d59b98ad27678123e06a5a79308f0)
+        ;
+
+        
+    
+    
+            var marker_821edc177f890e316c2917740fa0193e = L.marker(
+                [34.7042, -87.1189],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_ce5681fa2f1c90aa25dcabee94f05eba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ea7803d69eb5f5ae842118c541ead52 = $(`<div id="html_1ea7803d69eb5f5ae842118c541ead52" style="width: 100.0%; height: 100.0%;">Plant_name:Browns Ferry Plant annual net generation (MWh): 31053552.001 Plant state abbreviation: AL</div>`)[0];
+                popup_ce5681fa2f1c90aa25dcabee94f05eba.setContent(html_1ea7803d69eb5f5ae842118c541ead52);
+            
+        
+
+        marker_821edc177f890e316c2917740fa0193e.bindPopup(popup_ce5681fa2f1c90aa25dcabee94f05eba)
+        ;
+
+        
+    
+    
+            var marker_dc3040c74091c4b5e0e4735d8f971191 = L.marker(
+                [39.758936, -76.268742],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_1aeee649f75e7e13381b36128182d82f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_129b32efb6eb5985889378e48dc8f99d = $(`<div id="html_129b32efb6eb5985889378e48dc8f99d" style="width: 100.0%; height: 100.0%;">Plant_name:Peach Bottom Plant annual net generation (MWh): 22268244 Plant state abbreviation: PA</div>`)[0];
+                popup_1aeee649f75e7e13381b36128182d82f.setContent(html_129b32efb6eb5985889378e48dc8f99d);
+            
+        
+
+        marker_dc3040c74091c4b5e0e4735d8f971191.bindPopup(popup_1aeee649f75e7e13381b36128182d82f)
+        ;
+
+        
+    
+    
+            var marker_bf595a4758d86fb36869263be767f6fe = L.marker(
+                [34.7939, -82.8986],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_8f31b534448a623866e6e96a8657b1e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c49b6b3ef4fb399d59e2407dadff72cd = $(`<div id="html_c49b6b3ef4fb399d59e2407dadff72cd" style="width: 100.0%; height: 100.0%;">Plant_name:Oconee Plant annual net generation (MWh): 22206462.999 Plant state abbreviation: SC</div>`)[0];
+                popup_8f31b534448a623866e6e96a8657b1e4.setContent(html_c49b6b3ef4fb399d59e2407dadff72cd);
+            
+        
+
+        marker_bf595a4758d86fb36869263be767f6fe.bindPopup(popup_8f31b534448a623866e6e96a8657b1e4)
+        ;
+
+        
+    
+    
+            var marker_27e1c16548ac9aa253d8cb0b89b0949b = L.marker(
+                [28.795, -96.0481],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_74a7ff736522dc937a151a78745f6398 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d34370feb0838660409cdc5452916d4 = $(`<div id="html_3d34370feb0838660409cdc5452916d4" style="width: 100.0%; height: 100.0%;">Plant_name:South Texas Project Plant annual net generation (MWh): 20855004 Plant state abbreviation: TX</div>`)[0];
+                popup_74a7ff736522dc937a151a78745f6398.setContent(html_3d34370feb0838660409cdc5452916d4);
+            
+        
+
+        marker_27e1c16548ac9aa253d8cb0b89b0949b.bindPopup(popup_74a7ff736522dc937a151a78745f6398)
+        ;
+
+        
+    
+    
+            var marker_b035f67059fbb7dfabea16713f5f6c35 = L.marker(
+                [33.6319, -87.0597],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_da0903a85af6db044d691d42f8f3ef21 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cefd7ad553b99a5d581985b53f6a924e = $(`<div id="html_cefd7ad553b99a5d581985b53f6a924e" style="width: 100.0%; height: 100.0%;">Plant_name:James H Miller Jr Plant annual net generation (MWh): 20528965 Plant state abbreviation: AL</div>`)[0];
+                popup_da0903a85af6db044d691d42f8f3ef21.setContent(html_cefd7ad553b99a5d581985b53f6a924e);
+            
+        
+
+        marker_b035f67059fbb7dfabea16713f5f6c35.bindPopup(popup_da0903a85af6db044d691d42f8f3ef21)
+        ;
+
+        
+    
+    
+            var marker_678eb0c694b9e3aa878ed9b28e87f83f = L.marker(
+                [26.6986, -80.3747],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_c3f3712a24f6252ae278cb6e76e7318b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44e2598fa66e8ab14df4b2b27b0c3f77 = $(`<div id="html_44e2598fa66e8ab14df4b2b27b0c3f77" style="width: 100.0%; height: 100.0%;">Plant_name:West County Energy Center Plant annual net generation (MWh): 20327004 Plant state abbreviation: FL</div>`)[0];
+                popup_c3f3712a24f6252ae278cb6e76e7318b.setContent(html_44e2598fa66e8ab14df4b2b27b0c3f77);
+            
+        
+
+        marker_678eb0c694b9e3aa878ed9b28e87f83f.bindPopup(popup_c3f3712a24f6252ae278cb6e76e7318b)
+        ;
+
+        
+    
+    
+            var marker_307c5d4fed289ea4b90bda3b7723a469 = L.marker(
+                [42.0742, -89.2819],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_e6b4f918960e55782ab440749452b772 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8f8df1f80ee7197c4cd2c233effcec0 = $(`<div id="html_c8f8df1f80ee7197c4cd2c233effcec0" style="width: 100.0%; height: 100.0%;">Plant_name:Byron Generating Station Plant annual net generation (MWh): 19969652 Plant state abbreviation: IL</div>`)[0];
+                popup_e6b4f918960e55782ab440749452b772.setContent(html_c8f8df1f80ee7197c4cd2c233effcec0);
+            
+        
+
+        marker_307c5d4fed289ea4b90bda3b7723a469.bindPopup(popup_e6b4f918960e55782ab440749452b772)
+        ;
+
+        
+    
+    
+            var marker_5304ef1c33e8da33bbd2d28e0e4bab15 = L.marker(
+                [41.0919, -76.1462],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_8a52b668e9f25d78f57925508e8590a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78e06f30f721792943c3c6c9e49f28e5 = $(`<div id="html_78e06f30f721792943c3c6c9e49f28e5" style="width: 100.0%; height: 100.0%;">Plant_name:TalenEnergy Susquehanna Plant annual net generation (MWh): 19943546 Plant state abbreviation: PA</div>`)[0];
+                popup_8a52b668e9f25d78f57925508e8590a9.setContent(html_78e06f30f721792943c3c6c9e49f28e5);
+            
+        
+
+        marker_5304ef1c33e8da33bbd2d28e0e4bab15.bindPopup(popup_8a52b668e9f25d78f57925508e8590a9)
+        ;
+
+        
+    
+    
+            var marker_99020d1856945e652efef30157c5dffd = L.marker(
+                [33.1427, -81.7625],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_e21844a5cbea077eae9b7ac999162adb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c69abb98b948d844c369a5d82519ec36 = $(`<div id="html_c69abb98b948d844c369a5d82519ec36" style="width: 100.0%; height: 100.0%;">Plant_name:Vogtle Plant annual net generation (MWh): 19786908 Plant state abbreviation: GA</div>`)[0];
+                popup_e21844a5cbea077eae9b7ac999162adb.setContent(html_c69abb98b948d844c369a5d82519ec36);
+            
+        
+
+        marker_99020d1856945e652efef30157c5dffd.bindPopup(popup_e21844a5cbea077eae9b7ac999162adb)
+        ;
+
+        
+    
+    
+            var marker_bb5cb81323242fd055025c36c6667fce = L.marker(
+                [35.4331, -80.9486],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_fcdc14a8f81dab930b217006f4be4aa9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_665530b4933a1ba457d8ea5e71168acc = $(`<div id="html_665530b4933a1ba457d8ea5e71168acc" style="width: 100.0%; height: 100.0%;">Plant_name:McGuire Plant annual net generation (MWh): 19662114 Plant state abbreviation: NC</div>`)[0];
+                popup_fcdc14a8f81dab930b217006f4be4aa9.setContent(html_665530b4933a1ba457d8ea5e71168acc);
+            
+        
+
+        marker_bb5cb81323242fd055025c36c6667fce.bindPopup(popup_fcdc14a8f81dab930b217006f4be4aa9)
+        ;
+
+        
+    
+    
+            var marker_3a475617f4a1eb871d74370d31ca9ce8 = L.marker(
+                [41.2435, -88.2286],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_beda01bb1b54ab4d90cf0ec129c1d71d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd57efa10f11e6801c4233d74c63cca1 = $(`<div id="html_bd57efa10f11e6801c4233d74c63cca1" style="width: 100.0%; height: 100.0%;">Plant_name:Braidwood Generation Station Plant annual net generation (MWh): 19474347 Plant state abbreviation: IL</div>`)[0];
+                popup_beda01bb1b54ab4d90cf0ec129c1d71d.setContent(html_bd57efa10f11e6801c4233d74c63cca1);
+            
+        
+
+        marker_3a475617f4a1eb871d74370d31ca9ce8.bindPopup(popup_beda01bb1b54ab4d90cf0ec129c1d71d)
+        ;
+
+        
+    
+    
+            var marker_97ac9b2c7123072c4681d04bbdd2ffed = L.marker(
+                [32.298365, -97.785515],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_be184872b4a1d7559bbfe5a18ece0250 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2f02aac217859adf5ed774eb461ac0d = $(`<div id="html_d2f02aac217859adf5ed774eb461ac0d" style="width: 100.0%; height: 100.0%;">Plant_name:Comanche Peak Plant annual net generation (MWh): 19356253 Plant state abbreviation: TX</div>`)[0];
+                popup_be184872b4a1d7559bbfe5a18ece0250.setContent(html_d2f02aac217859adf5ed774eb461ac0d);
+            
+        
+
+        marker_97ac9b2c7123072c4681d04bbdd2ffed.bindPopup(popup_be184872b4a1d7559bbfe5a18ece0250)
+        ;
+
+        
+    
+    
+            var marker_a967766822137f4241c30fb2f41fce35 = L.marker(
+                [25.4356, -80.3308],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_2c009e5b8233c453c2f02cf51c7113d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54c9c82c8383998bdc0e8d47af2f54f8 = $(`<div id="html_54c9c82c8383998bdc0e8d47af2f54f8" style="width: 100.0%; height: 100.0%;">Plant_name:Turkey Point Plant annual net generation (MWh): 19340939 Plant state abbreviation: FL</div>`)[0];
+                popup_2c009e5b8233c453c2f02cf51c7113d7.setContent(html_54c9c82c8383998bdc0e8d47af2f54f8);
+            
+        
+
+        marker_a967766822137f4241c30fb2f41fce35.bindPopup(popup_2c009e5b8233c453c2f02cf51c7113d7)
+        ;
+
+        
+    
+    
+            var marker_e4c562774ff58433314ad84782829cba = L.marker(
+                [40.224303, -75.58744],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_a0ba3f42a346a5d1db086864506956d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_894cecc09ec3aad6711d4ab4da07ad78 = $(`<div id="html_894cecc09ec3aad6711d4ab4da07ad78" style="width: 100.0%; height: 100.0%;">Plant_name:Limerick Plant annual net generation (MWh): 19309328 Plant state abbreviation: PA</div>`)[0];
+                popup_a0ba3f42a346a5d1db086864506956d0.setContent(html_894cecc09ec3aad6711d4ab4da07ad78);
+            
+        
+
+        marker_e4c562774ff58433314ad84782829cba.bindPopup(popup_a0ba3f42a346a5d1db086864506956d0)
+        ;
+
+        
+    
+    
+            var marker_d2f790e4fc5e5eb00f592ab103e57d79 = L.marker(
+                [39.4625, -75.5358],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_06430d486fce6d8443af4177da7b4c1f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e9340b053012d7c809c88e4a2299789 = $(`<div id="html_7e9340b053012d7c809c88e4a2299789" style="width: 100.0%; height: 100.0%;">Plant_name:Salem Generating Station Plant annual net generation (MWh): 19062001 Plant state abbreviation: NJ</div>`)[0];
+                popup_06430d486fce6d8443af4177da7b4c1f.setContent(html_7e9340b053012d7c809c88e4a2299789);
+            
+        
+
+        marker_d2f790e4fc5e5eb00f592ab103e57d79.bindPopup(popup_06430d486fce6d8443af4177da7b4c1f)
+        ;
+
+        
+    
+    
+            var marker_119a73c0cf6c13348100757ccde954de = L.marker(
+                [35.0514, -81.0694],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_54bac86f2bbb975c8da6b76155c98971 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c14e4164fcb1b280502e5d4e6556228 = $(`<div id="html_7c14e4164fcb1b280502e5d4e6556228" style="width: 100.0%; height: 100.0%;">Plant_name:Catawba Plant annual net generation (MWh): 18585719 Plant state abbreviation: SC</div>`)[0];
+                popup_54bac86f2bbb975c8da6b76155c98971.setContent(html_7c14e4164fcb1b280502e5d4e6556228);
+            
+        
+
+        marker_119a73c0cf6c13348100757ccde954de.bindPopup(popup_54bac86f2bbb975c8da6b76155c98971)
+        ;
+
+        
+    
+    
+            var marker_64f4dfb431e41fc1e7901fc065d578b2 = L.marker(
+                [41.245498, -88.669066],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_0db06a883330fd3ba1b9c27b3eee93df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_223064145c8a8f9bf0b5edb37979921d = $(`<div id="html_223064145c8a8f9bf0b5edb37979921d" style="width: 100.0%; height: 100.0%;">Plant_name:LaSalle Generating Station Plant annual net generation (MWh): 18504745 Plant state abbreviation: IL</div>`)[0];
+                popup_0db06a883330fd3ba1b9c27b3eee93df.setContent(html_223064145c8a8f9bf0b5edb37979921d);
+            
+        
+
+        marker_64f4dfb431e41fc1e7901fc065d578b2.bindPopup(popup_0db06a883330fd3ba1b9c27b3eee93df)
+        ;
+
+        
+    
+    
+            var marker_8c80728287988100667f6644683247e3 = L.marker(
+                [47.957511, -118.977323],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_441154b97cf1c25a3a04e9124b00b3c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aec7b765e53f9a57108d6ac9691f0acb = $(`<div id="html_aec7b765e53f9a57108d6ac9691f0acb" style="width: 100.0%; height: 100.0%;">Plant_name:Grand Coulee Plant annual net generation (MWh): 18325317.999 Plant state abbreviation: WA</div>`)[0];
+                popup_441154b97cf1c25a3a04e9124b00b3c8.setContent(html_aec7b765e53f9a57108d6ac9691f0acb);
+            
+        
+
+        marker_8c80728287988100667f6644683247e3.bindPopup(popup_441154b97cf1c25a3a04e9124b00b3c8)
+        ;
+
+        
+    
+    
+            var marker_fd756ae4104a8643fdc4f47de7a5cde7 = L.marker(
+                [33.8239, -84.4758],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_ae6b1e5bd8259ff48a52fe194973d0c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e51ff35de20e1b519216f4092cbfff49 = $(`<div id="html_e51ff35de20e1b519216f4092cbfff49" style="width: 100.0%; height: 100.0%;">Plant_name:Jack McDonough Plant annual net generation (MWh): 18235418 Plant state abbreviation: GA</div>`)[0];
+                popup_ae6b1e5bd8259ff48a52fe194973d0c9.setContent(html_e51ff35de20e1b519216f4092cbfff49);
+            
+        
+
+        marker_fd756ae4104a8643fdc4f47de7a5cde7.bindPopup(popup_ae6b1e5bd8259ff48a52fe194973d0c9)
+        ;
+
+        
+    
+    
+            var marker_da0a24902e2a9c78de69574a80f0bcab = L.marker(
+                [41.975604, -86.565206],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_3e4127a9e7ad69d93df6e4a06b242b56 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86502761ebf1f73a313b1f72d67f9c46 = $(`<div id="html_86502761ebf1f73a313b1f72d67f9c46" style="width: 100.0%; height: 100.0%;">Plant_name:Donald C Cook Plant annual net generation (MWh): 17953984 Plant state abbreviation: MI</div>`)[0];
+                popup_3e4127a9e7ad69d93df6e4a06b242b56.setContent(html_86502761ebf1f73a313b1f72d67f9c46);
+            
+        
+
+        marker_da0a24902e2a9c78de69574a80f0bcab.bindPopup(popup_3e4127a9e7ad69d93df6e4a06b242b56)
+        ;
+
+        
+    
+    
+            var marker_b8b6c97dd97b4eae7da88d49367ab67f = L.marker(
+                [35.6021, -84.7895],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_2c146b05be044bf5a12f94e437743668 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e52db6345f8763c168a7a0e5b1b21558 = $(`<div id="html_e52db6345f8763c168a7a0e5b1b21558" style="width: 100.0%; height: 100.0%;">Plant_name:Watts Bar Nuclear Plant Plant annual net generation (MWh): 17675595 Plant state abbreviation: TN</div>`)[0];
+                popup_2c146b05be044bf5a12f94e437743668.setContent(html_e52db6345f8763c168a7a0e5b1b21558);
+            
+        
+
+        marker_b8b6c97dd97b4eae7da88d49367ab67f.bindPopup(popup_2c146b05be044bf5a12f94e437743668)
+        ;
+
+        
+    
+    
+            var marker_0df23aa5b528565be60c93e1b0b7c55c = L.marker(
+                [35.2267, -85.0917],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_cd452ef8fcc7017d42161fff42677830 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba2dc37e50ee2496c903281b06c16299 = $(`<div id="html_ba2dc37e50ee2496c903281b06c16299" style="width: 100.0%; height: 100.0%;">Plant_name:Sequoyah Plant annual net generation (MWh): 17654812 Plant state abbreviation: TN</div>`)[0];
+                popup_cd452ef8fcc7017d42161fff42677830.setContent(html_ba2dc37e50ee2496c903281b06c16299);
+            
+        
+
+        marker_0df23aa5b528565be60c93e1b0b7c55c.bindPopup(popup_cd452ef8fcc7017d42161fff42677830)
+        ;
+
+        
+    
+    
+            var marker_a8e6afc3931eaf49fc43f23030f1684d = L.marker(
+                [41.3107, -72.1677],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_67189eaf14c7c87ed7e9e211a2857b07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d45b75ff681ccf85b0ca96d6a7600436 = $(`<div id="html_d45b75ff681ccf85b0ca96d6a7600436" style="width: 100.0%; height: 100.0%;">Plant_name:Millstone Plant annual net generation (MWh): 17216509 Plant state abbreviation: CT</div>`)[0];
+                popup_67189eaf14c7c87ed7e9e211a2857b07.setContent(html_d45b75ff681ccf85b0ca96d6a7600436);
+            
+        
+
+        marker_a8e6afc3931eaf49fc43f23030f1684d.bindPopup(popup_67189eaf14c7c87ed7e9e211a2857b07)
+        ;
+
+        
+    
+    
+            var marker_4227c24ae994344f816d83d54c4e5b0d = L.marker(
+                [38.562244, -90.837686],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_61eee16477fc2b39e56596badf8a7fe2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05220695c6504abc70b1514bd478910d = $(`<div id="html_05220695c6504abc70b1514bd478910d" style="width: 100.0%; height: 100.0%;">Plant_name:Labadie Plant annual net generation (MWh): 16608055 Plant state abbreviation: MO</div>`)[0];
+                popup_61eee16477fc2b39e56596badf8a7fe2.setContent(html_05220695c6504abc70b1514bd478910d);
+            
+        
+
+        marker_4227c24ae994344f816d83d54c4e5b0d.bindPopup(popup_61eee16477fc2b39e56596badf8a7fe2)
+        ;
+
+        
+    
+    
+            var marker_a076ea593e885a566c2499dac6302753 = L.marker(
+                [35.211536, -120.855542],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_fd02935e92b32cb9d91ca5b8d89a5561 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f640c3a6c42618c0c56f0ba5980f856 = $(`<div id="html_7f640c3a6c42618c0c56f0ba5980f856" style="width: 100.0%; height: 100.0%;">Plant_name:Diablo Canyon Plant annual net generation (MWh): 16477366 Plant state abbreviation: CA</div>`)[0];
+                popup_fd02935e92b32cb9d91ca5b8d89a5561.setContent(html_7f640c3a6c42618c0c56f0ba5980f856);
+            
+        
+
+        marker_a076ea593e885a566c2499dac6302753.bindPopup(popup_fd02935e92b32cb9d91ca5b8d89a5561)
+        ;
+
+        
+    
+    
+            var marker_00a827dc0932046bb71fb723a823d738 = L.marker(
+                [43.1427, -79.0394],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_f2ed13fe156a1e818ef170cb32ca8639 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b3d10634c48dcdaee6b67ba9520be4a = $(`<div id="html_4b3d10634c48dcdaee6b67ba9520be4a" style="width: 100.0%; height: 100.0%;">Plant_name:Robert Moses Niagara Plant annual net generation (MWh): 16425549.005 Plant state abbreviation: NY</div>`)[0];
+                popup_f2ed13fe156a1e818ef170cb32ca8639.setContent(html_4b3d10634c48dcdaee6b67ba9520be4a);
+            
+        
+
+        marker_00a827dc0932046bb71fb723a823d738.bindPopup(popup_f2ed13fe156a1e818ef170cb32ca8639)
+        ;
+
+        
+    
+    
+            var marker_96af18849f2197ba5c8d33ce4053b6ec = L.marker(
+                [43.5211, -76.41],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_c42b303a72f2e13a71c67d21c9b078ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ad800613cf35490be6c6b38e0815c24 = $(`<div id="html_3ad800613cf35490be6c6b38e0815c24" style="width: 100.0%; height: 100.0%;">Plant_name:Nine Mile Point Nuclear Station Plant annual net generation (MWh): 16206392 Plant state abbreviation: NY</div>`)[0];
+                popup_c42b303a72f2e13a71c67d21c9b078ae.setContent(html_3ad800613cf35490be6c6b38e0815c24);
+            
+        
+
+        marker_96af18849f2197ba5c8d33ce4053b6ec.bindPopup(popup_c42b303a72f2e13a71c67d21c9b078ae)
+        ;
+
+        
+    
+    
+            var marker_9caa311af79e5e23826a08cf7db34975 = L.marker(
+                [28.9656, -82.6977],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_8aabbc89502c9a52f15e59cebec231de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_405316afe9ceb7c9dc4ef5b2ebf2b080 = $(`<div id="html_405316afe9ceb7c9dc4ef5b2ebf2b080" style="width: 100.0%; height: 100.0%;">Plant_name:Crystal River Plant annual net generation (MWh): 16157353 Plant state abbreviation: FL</div>`)[0];
+                popup_8aabbc89502c9a52f15e59cebec231de.setContent(html_405316afe9ceb7c9dc4ef5b2ebf2b080);
+            
+        
+
+        marker_9caa311af79e5e23826a08cf7db34975.bindPopup(popup_8aabbc89502c9a52f15e59cebec231de)
+        ;
+
+        
+    
+    
+            var marker_ebfb62b3191cebd8d35316f8c753322c = L.marker(
+                [41.726111, -90.310278],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_fa1c50d7321add80a9f6c54b2924c1cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47a54fae34270bfea565a2372051b367 = $(`<div id="html_47a54fae34270bfea565a2372051b367" style="width: 100.0%; height: 100.0%;">Plant_name:Quad Cities Generating Station Plant annual net generation (MWh): 15740328 Plant state abbreviation: IL</div>`)[0];
+                popup_fa1c50d7321add80a9f6c54b2924c1cf.setContent(html_47a54fae34270bfea565a2372051b367);
+            
+        
+
+        marker_ebfb62b3191cebd8d35316f8c753322c.bindPopup(popup_fa1c50d7321add80a9f6c54b2924c1cf)
+        ;
+
+        
+    
+    
+            var marker_a2642005be0aa1e70914aa2efea7f785 = L.marker(
+                [33.9597, -78.0114],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_2e00504ef269a89618ba88bdef66a715 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8151c146a5df624bb0e18c4dfefacc9 = $(`<div id="html_b8151c146a5df624bb0e18c4dfefacc9" style="width: 100.0%; height: 100.0%;">Plant_name:Brunswick Nuclear Plant annual net generation (MWh): 15468860 Plant state abbreviation: NC</div>`)[0];
+                popup_2e00504ef269a89618ba88bdef66a715.setContent(html_b8151c146a5df624bb0e18c4dfefacc9);
+            
+        
+
+        marker_a2642005be0aa1e70914aa2efea7f785.bindPopup(popup_2e00504ef269a89618ba88bdef66a715)
+        ;
+
+        
+    
+    
+            var marker_6ca5298a4fd0388cf0e30c70f6931163 = L.marker(
+                [38.06, -77.7897],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_d4416d5440594838fe02bc42bb3b0511 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae0faf780bae23292a5cf6e26dab14e6 = $(`<div id="html_ae0faf780bae23292a5cf6e26dab14e6" style="width: 100.0%; height: 100.0%;">Plant_name:North Anna Plant annual net generation (MWh): 15371765 Plant state abbreviation: VA</div>`)[0];
+                popup_d4416d5440594838fe02bc42bb3b0511.setContent(html_ae0faf780bae23292a5cf6e26dab14e6);
+            
+        
+
+        marker_6ca5298a4fd0388cf0e30c70f6931163.bindPopup(popup_d4416d5440594838fe02bc42bb3b0511)
+        ;
+
+        
+    
+    
+            var marker_68e8a09a7f88990629c86e78efcadd70 = L.marker(
+                [38.4344, -76.4417],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_b6749c39d64b720fa3ecdde03464b7e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e3b24bd696fcd46eb82be1073ccbdb1e = $(`<div id="html_e3b24bd696fcd46eb82be1073ccbdb1e" style="width: 100.0%; height: 100.0%;">Plant_name:Calvert Cliffs Nuclear Power Plant Plant annual net generation (MWh): 14993633 Plant state abbreviation: MD</div>`)[0];
+                popup_b6749c39d64b720fa3ecdde03464b7e6.setContent(html_e3b24bd696fcd46eb82be1073ccbdb1e);
+            
+        
+
+        marker_68e8a09a7f88990629c86e78efcadd70.bindPopup(popup_b6749c39d64b720fa3ecdde03464b7e6)
+        ;
+
+        
+    
+    
+            var marker_f1e32f27989010f21ad09d22f9fce321 = L.marker(
+                [31.2231, -85.1116],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_16091be5907bc85713e8ef16153169ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_045c464cec096186619e046feee951ba = $(`<div id="html_045c464cec096186619e046feee951ba" style="width: 100.0%; height: 100.0%;">Plant_name:Joseph M Farley Plant annual net generation (MWh): 14982937 Plant state abbreviation: AL</div>`)[0];
+                popup_16091be5907bc85713e8ef16153169ee.setContent(html_045c464cec096186619e046feee951ba);
+            
+        
+
+        marker_f1e32f27989010f21ad09d22f9fce321.bindPopup(popup_16091be5907bc85713e8ef16153169ee)
+        ;
+
+        
+    
+    
+            var marker_e7de2a42cdf986746f6c2674e8e088ec = L.marker(
+                [41.39, -88.27],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_412fafad45a6b07abd0bafbe78c5f262 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce0662f9b1d5f049293123c2d3f51ec0 = $(`<div id="html_ce0662f9b1d5f049293123c2d3f51ec0" style="width: 100.0%; height: 100.0%;">Plant_name:Dresden Generating Station Plant annual net generation (MWh): 14956680 Plant state abbreviation: IL</div>`)[0];
+                popup_412fafad45a6b07abd0bafbe78c5f262.setContent(html_ce0662f9b1d5f049293123c2d3f51ec0);
+            
+        
+
+        marker_e7de2a42cdf986746f6c2674e8e088ec.bindPopup(popup_412fafad45a6b07abd0bafbe78c5f262)
+        ;
+
+        
+    
+    
+            var marker_7bba1e3e26fec64775611607ef05bd9f = L.marker(
+                [29.4828, -95.6311],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_3616010b7c479f83b608ff28d1140a06 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1585a68b5a38c50dd807e4bae533079b = $(`<div id="html_1585a68b5a38c50dd807e4bae533079b" style="width: 100.0%; height: 100.0%;">Plant_name:W A Parish Plant annual net generation (MWh): 14816763 Plant state abbreviation: TX</div>`)[0];
+                popup_3616010b7c479f83b608ff28d1140a06.setContent(html_1585a68b5a38c50dd807e4bae533079b);
+            
+        
+
+        marker_7bba1e3e26fec64775611607ef05bd9f.bindPopup(popup_3616010b7c479f83b608ff28d1140a06)
+        ;
+
+        
+    
+    
+            var marker_ef3dc4c68f6dc0854c10894fbe852ca7 = L.marker(
+                [41.8906, -83.3464],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_20a70441af428aac3b1f57637b2d1d6d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc15000cd1233d31da2666ae713960d7 = $(`<div id="html_fc15000cd1233d31da2666ae713960d7" style="width: 100.0%; height: 100.0%;">Plant_name:Monroe Plant annual net generation (MWh): 14722463 Plant state abbreviation: MI</div>`)[0];
+                popup_20a70441af428aac3b1f57637b2d1d6d.setContent(html_fc15000cd1233d31da2666ae713960d7);
+            
+        
+
+        marker_ef3dc4c68f6dc0854c10894fbe852ca7.bindPopup(popup_20a70441af428aac3b1f57637b2d1d6d)
+        ;
+
+        
+    
+    
+            var marker_ac43b3dce747276e6c570de3faf7a0de = L.marker(
+                [40.6219, -80.4336],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_2b73d187a4dd3c6bf53daf4f6f0acf97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b9c0222fd913c5de4f395c9e4b91697 = $(`<div id="html_0b9c0222fd913c5de4f395c9e4b91697" style="width: 100.0%; height: 100.0%;">Plant_name:Beaver Valley Plant annual net generation (MWh): 14381396 Plant state abbreviation: PA</div>`)[0];
+                popup_2b73d187a4dd3c6bf53daf4f6f0acf97.setContent(html_0b9c0222fd913c5de4f395c9e4b91697);
+            
+        
+
+        marker_ac43b3dce747276e6c570de3faf7a0de.bindPopup(popup_2b73d187a4dd3c6bf53daf4f6f0acf97)
+        ;
+
+        
+    
+    
+            var marker_686cbc272c2cdb02a81a0585b3b76d61 = L.marker(
+                [31.9342, -82.3447],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_fc88a314e47c8d33d81bfb8f931b76d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b353e6ea3f47e7f393de7d281f15c69c = $(`<div id="html_b353e6ea3f47e7f393de7d281f15c69c" style="width: 100.0%; height: 100.0%;">Plant_name:Edwin I Hatch Plant annual net generation (MWh): 14165068 Plant state abbreviation: GA</div>`)[0];
+                popup_fc88a314e47c8d33d81bfb8f931b76d4.setContent(html_b353e6ea3f47e7f393de7d281f15c69c);
+            
+        
+
+        marker_686cbc272c2cdb02a81a0585b3b76d61.bindPopup(popup_fc88a314e47c8d33d81bfb8f931b76d4)
+        ;
+
+        
+    
+    
+            var marker_95976bd1d8b502331aa7b33ccfd1227d = L.marker(
+                [27.348611, -80.246389],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_2c5fb290bdf6701eb7887bbdf1b8960e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e489ad2756feaa7706b718d91ee244cb = $(`<div id="html_e489ad2756feaa7706b718d91ee244cb" style="width: 100.0%; height: 100.0%;">Plant_name:St Lucie Plant annual net generation (MWh): 14153683 Plant state abbreviation: FL</div>`)[0];
+                popup_2c5fb290bdf6701eb7887bbdf1b8960e.setContent(html_e489ad2756feaa7706b718d91ee244cb);
+            
+        
+
+        marker_95976bd1d8b502331aa7b33ccfd1227d.bindPopup(popup_2c5fb290bdf6701eb7887bbdf1b8960e)
+        ;
+
+        
+    
+    
+            var marker_9a25cc4fb2520b5a1ba47e9bc1dc0d3b = L.marker(
+                [38.9347, -82.1158],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_872fc33d2e2f821ef48ee9d0cfe22002 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f3f90fb5ebed71ee9c1c5df8ef19b62 = $(`<div id="html_3f3f90fb5ebed71ee9c1c5df8ef19b62" style="width: 100.0%; height: 100.0%;">Plant_name:Gen J M Gavin Plant annual net generation (MWh): 13806727 Plant state abbreviation: OH</div>`)[0];
+                popup_872fc33d2e2f821ef48ee9d0cfe22002.setContent(html_3f3f90fb5ebed71ee9c1c5df8ef19b62);
+            
+        
+
+        marker_9a25cc4fb2520b5a1ba47e9bc1dc0d3b.bindPopup(popup_872fc33d2e2f821ef48ee9d0cfe22002)
+        ;
+
+        
+    
+    
+            var marker_db1060e57f1a6734d01719b47ef1b71e = L.marker(
+                [35.311, -93.2351],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_18a9d1c5f7a0d069e339440c0d264574 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6a2378906d9dfb154085de61365e1f7 = $(`<div id="html_b6a2378906d9dfb154085de61365e1f7" style="width: 100.0%; height: 100.0%;">Plant_name:Arkansas Nuclear One Plant annual net generation (MWh): 13555684 Plant state abbreviation: AR</div>`)[0];
+                popup_18a9d1c5f7a0d069e339440c0d264574.setContent(html_b6a2378906d9dfb154085de61365e1f7);
+            
+        
+
+        marker_db1060e57f1a6734d01719b47ef1b71e.bindPopup(popup_18a9d1c5f7a0d069e339440c0d264574)
+        ;
+
+        
+    
+    
+            var marker_8c7ea59f3025ad810b0818b7d55b5ce7 = L.marker(
+                [37.1661, -76.6986],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_bd000ee715285df2ce0868cb266ed168 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1218724541f3a494aa9dd708ecc7b2fc = $(`<div id="html_1218724541f3a494aa9dd708ecc7b2fc" style="width: 100.0%; height: 100.0%;">Plant_name:Surry Plant annual net generation (MWh): 13199870 Plant state abbreviation: VA</div>`)[0];
+                popup_bd000ee715285df2ce0868cb266ed168.setContent(html_1218724541f3a494aa9dd708ecc7b2fc);
+            
+        
+
+        marker_8c7ea59f3025ad810b0818b7d55b5ce7.bindPopup(popup_bd000ee715285df2ce0868cb266ed168)
+        ;
+
+        
+    
+    
+            var marker_cd4f0006c96cc20cfd28ea8b497bcfb2 = L.marker(
+                [32.2606, -94.5706],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_9182a5f476356cf7ad13e3a2935a8532 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4a180b3f45150b0474f92e26066aba6 = $(`<div id="html_b4a180b3f45150b0474f92e26066aba6" style="width: 100.0%; height: 100.0%;">Plant_name:Martin Lake Plant annual net generation (MWh): 13179510 Plant state abbreviation: TX</div>`)[0];
+                popup_9182a5f476356cf7ad13e3a2935a8532.setContent(html_b4a180b3f45150b0474f92e26066aba6);
+            
+        
+
+        marker_cd4f0006c96cc20cfd28ea8b497bcfb2.bindPopup(popup_9182a5f476356cf7ad13e3a2935a8532)
+        ;
+
+        
+    
+    
+            var marker_d09f8206f9341e7b601c5c64c33bfb41 = L.marker(
+                [38.279167, -89.666944],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_40181329dd1712487625806c2ec2f902 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c0106626392468571df3e6df159f586 = $(`<div id="html_0c0106626392468571df3e6df159f586" style="width: 100.0%; height: 100.0%;">Plant_name:Prairie State Generating Station Plant annual net generation (MWh): 12685744 Plant state abbreviation: IL</div>`)[0];
+                popup_40181329dd1712487625806c2ec2f902.setContent(html_0c0106626392468571df3e6df159f586);
+            
+        
+
+        marker_d09f8206f9341e7b601c5c64c33bfb41.bindPopup(popup_40181329dd1712487625806c2ec2f902)
+        ;
+
+        
+    
+    
+            var marker_1a456dfbddc544e6c67ab55344b8fe4a = L.marker(
+                [31.1803, -96.4866],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_dbea4caeade7b8d856ca015bd14e98f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d30278cb8c96f7ec9b227878a1b52f94 = $(`<div id="html_d30278cb8c96f7ec9b227878a1b52f94" style="width: 100.0%; height: 100.0%;">Plant_name:Oak Grove Plant annual net generation (MWh): 12334134 Plant state abbreviation: TX</div>`)[0];
+                popup_dbea4caeade7b8d856ca015bd14e98f0.setContent(html_d30278cb8c96f7ec9b227878a1b52f94);
+            
+        
+
+        marker_1a456dfbddc544e6c67ab55344b8fe4a.bindPopup(popup_dbea4caeade7b8d856ca015bd14e98f0)
+        ;
+
+        
+    
+    
+            var marker_40e120893b0223a73b67d7432b54541e = L.marker(
+                [38.4731, -81.8233],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_781ca02591193bd66ab64fd6f09b5a69 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_507d0c7eb2ef25995955c740aa5f5d03 = $(`<div id="html_507d0c7eb2ef25995955c740aa5f5d03" style="width: 100.0%; height: 100.0%;">Plant_name:John E Amos Plant annual net generation (MWh): 12011111 Plant state abbreviation: WV</div>`)[0];
+                popup_781ca02591193bd66ab64fd6f09b5a69.setContent(html_507d0c7eb2ef25995955c740aa5f5d03);
+            
+        
+
+        marker_40e120893b0223a73b67d7432b54541e.bindPopup(popup_781ca02591193bd66ab64fd6f09b5a69)
+        ;
+
+        
+    
+    
+            var marker_fe93c66ecc4b71794512222294327883 = L.marker(
+                [31.0069, -88.0103],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_2cb063b20fca791aedebf20f5315c43c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_435e6cbeb0522de784217162520585f7 = $(`<div id="html_435e6cbeb0522de784217162520585f7" style="width: 100.0%; height: 100.0%;">Plant_name:Barry Plant annual net generation (MWh): 11792286 Plant state abbreviation: AL</div>`)[0];
+                popup_2cb063b20fca791aedebf20f5315c43c.setContent(html_435e6cbeb0522de784217162520585f7);
+            
+        
+
+        marker_fe93c66ecc4b71794512222294327883.bindPopup(popup_2cb063b20fca791aedebf20f5315c43c)
+        ;
+
+        
+    
+    
+            var marker_c84fe4751f1e82b5b188d7e592b031b0 = L.marker(
+                [32.0081, -91.0478],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_e5d6f660d91ac1d4fe3966dccd7bbbd4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e9c95edb141a9ccaace6d1e3584a4d9 = $(`<div id="html_5e9c95edb141a9ccaace6d1e3584a4d9" style="width: 100.0%; height: 100.0%;">Plant_name:Grand Gulf Plant annual net generation (MWh): 11772058 Plant state abbreviation: MS</div>`)[0];
+                popup_e5d6f660d91ac1d4fe3966dccd7bbbd4.setContent(html_5e9c95edb141a9ccaace6d1e3584a4d9);
+            
+        
+
+        marker_c84fe4751f1e82b5b188d7e592b031b0.bindPopup(popup_e5d6f660d91ac1d4fe3966dccd7bbbd4)
+        ;
+
+        
+    
+    
+            var marker_e7074438acef07749e53cad179ffc8ed = L.marker(
+                [27.788215, -81.869983],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_aaf5109a49b5f1118f83e7eaabacbcc6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d86df088567a1911aeabb8ad5cc49b81 = $(`<div id="html_d86df088567a1911aeabb8ad5cc49b81" style="width: 100.0%; height: 100.0%;">Plant_name:Hines Energy Complex Plant annual net generation (MWh): 11517629 Plant state abbreviation: FL</div>`)[0];
+                popup_aaf5109a49b5f1118f83e7eaabacbcc6.setContent(html_d86df088567a1911aeabb8ad5cc49b81);
+            
+        
+
+        marker_e7074438acef07749e53cad179ffc8ed.bindPopup(popup_aaf5109a49b5f1118f83e7eaabacbcc6)
+        ;
+
+        
+    
+    
+            var marker_d2198e8ce561fdf51fc7f7865e6a511b = L.marker(
+                [36.718236, -77.649559],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_ef600e647911882b606eb4e24db5b61a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8eb5df755d462dc9a3a76ef36b8e64e = $(`<div id="html_b8eb5df755d462dc9a3a76ef36b8e64e" style="width: 100.0%; height: 100.0%;">Plant_name:Greensville County Power Station Plant annual net generation (MWh): 11513187 Plant state abbreviation: VA</div>`)[0];
+                popup_ef600e647911882b606eb4e24db5b61a.setContent(html_b8eb5df755d462dc9a3a76ef36b8e64e);
+            
+        
+
+        marker_d2198e8ce561fdf51fc7f7865e6a511b.bindPopup(popup_ef600e647911882b606eb4e24db5b61a)
+        ;
+
+        
+    
+    
+            var marker_e73c1fab00f5bcd9cdc5bd4199bb52a4 = L.marker(
+                [39.384167, -80.3325],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_23f48f3e99583551e5fa7a43005572c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f2bc7d44c7ed5d7a1e304b4b041c073 = $(`<div id="html_6f2bc7d44c7ed5d7a1e304b4b041c073" style="width: 100.0%; height: 100.0%;">Plant_name:Harrison Power Station Plant annual net generation (MWh): 11494151 Plant state abbreviation: WV</div>`)[0];
+                popup_23f48f3e99583551e5fa7a43005572c7.setContent(html_6f2bc7d44c7ed5d7a1e304b4b041c073);
+            
+        
+
+        marker_e73c1fab00f5bcd9cdc5bd4199bb52a4.bindPopup(popup_23f48f3e99583551e5fa7a43005572c7)
+        ;
+
+        
+    
+    
+            var marker_2236ee49ba259572b2d00764d35162c2 = L.marker(
+                [32.6078, -85.0975],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_e808093dd5d2653d076625773817da81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9c28855e695964e168d058ac4491f60 = $(`<div id="html_c9c28855e695964e168d058ac4491f60" style="width: 100.0%; height: 100.0%;">Plant_name:Plant H. Allen Franklin Plant annual net generation (MWh): 11356994 Plant state abbreviation: AL</div>`)[0];
+                popup_e808093dd5d2653d076625773817da81.setContent(html_c9c28855e695964e168d058ac4491f60);
+            
+        
+
+        marker_2236ee49ba259572b2d00764d35162c2.bindPopup(popup_e808093dd5d2653d076625773817da81)
+        ;
+
+        
+    
+    
+            var marker_46914835c88de57ff55d2771b0aab0b5 = L.marker(
+                [30.5322, -88.5553],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_5aabf43cbeea79593da0b14f59058f3c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b88102476150c95926b7b2e5b7b7138d = $(`<div id="html_b88102476150c95926b7b2e5b7b7138d" style="width: 100.0%; height: 100.0%;">Plant_name:Daniel Electric Generating Plant Plant annual net generation (MWh): 11285588 Plant state abbreviation: MS</div>`)[0];
+                popup_5aabf43cbeea79593da0b14f59058f3c.setContent(html_b88102476150c95926b7b2e5b7b7138d);
+            
+        
+
+        marker_46914835c88de57ff55d2771b0aab0b5.bindPopup(popup_5aabf43cbeea79593da0b14f59058f3c)
+        ;
+
+        
+    
+    
+            var marker_b9ec2bea0143c8fc9d1c841657cf092f = L.marker(
+                [33.296146, -92.589364],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_5478e48c23e1c82ac4d10c7003e24f96 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bfd5697c459e6ad6630ea5a7cfe41c00 = $(`<div id="html_bfd5697c459e6ad6630ea5a7cfe41c00" style="width: 100.0%; height: 100.0%;">Plant_name:Union Power Station Plant annual net generation (MWh): 11206830 Plant state abbreviation: AR</div>`)[0];
+                popup_5478e48c23e1c82ac4d10c7003e24f96.setContent(html_bfd5697c459e6ad6630ea5a7cfe41c00);
+            
+        
+
+        marker_b9ec2bea0143c8fc9d1c841657cf092f.bindPopup(popup_5478e48c23e1c82ac4d10c7003e24f96)
+        ;
+
+        
+    
+    
+            var marker_813f865179288cfd06de9f9f1ea25957 = L.marker(
+                [47.9951, -119.6404],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_24de43f153ef8a1f0a9e45419399854f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef50862436cc281307e8d2fd9a380f02 = $(`<div id="html_ef50862436cc281307e8d2fd9a380f02" style="width: 100.0%; height: 100.0%;">Plant_name:Chief Joseph Plant annual net generation (MWh): 10981266.013 Plant state abbreviation: WA</div>`)[0];
+                popup_24de43f153ef8a1f0a9e45419399854f.setContent(html_ef50862436cc281307e8d2fd9a380f02);
+            
+        
+
+        marker_813f865179288cfd06de9f9f1ea25957.bindPopup(popup_24de43f153ef8a1f0a9e45419399854f)
+        ;
+
+        
+    
+    
+            var marker_b969dced971030f9c7c545a09bc868f3 = L.marker(
+                [38.7497, -85.035],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_38bb99ca16390ebfef870e808a407d7e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46436780dc31dd643806663f77029b28 = $(`<div id="html_46436780dc31dd643806663f77029b28" style="width: 100.0%; height: 100.0%;">Plant_name:Ghent Plant annual net generation (MWh): 10582328 Plant state abbreviation: KY</div>`)[0];
+                popup_38bb99ca16390ebfef870e808a407d7e.setContent(html_46436780dc31dd643806663f77029b28);
+            
+        
+
+        marker_b969dced971030f9c7c545a09bc868f3.bindPopup(popup_38bb99ca16390ebfef870e808a407d7e)
+        ;
+
+        
+    
+    
+            var marker_ba0700ead4d4e3295126026f1f13284a = L.marker(
+                [41.471389, -75.544167],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_a03cdeb87d8a8826f259fad2968d5d1a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f056f02f1bc736c9f1dc90df85722e16 = $(`<div id="html_f056f02f1bc736c9f1dc90df85722e16" style="width: 100.0%; height: 100.0%;">Plant_name:Lackawanna Energy Center Plant annual net generation (MWh): 10555322 Plant state abbreviation: PA</div>`)[0];
+                popup_a03cdeb87d8a8826f259fad2968d5d1a.setContent(html_f056f02f1bc736c9f1dc90df85722e16);
+            
+        
+
+        marker_ba0700ead4d4e3295126026f1f13284a.bindPopup(popup_a03cdeb87d8a8826f259fad2968d5d1a)
+        ;
+
+        
+    
+    
+            var marker_79be3f3eb1cab3dcbc689d6baa73c873 = L.marker(
+                [36.3903, -87.6539],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_0bd12054df3f48658809c679c7aecdfe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_868570a2e1ab433c1a046b4c288ce08a = $(`<div id="html_868570a2e1ab433c1a046b4c288ce08a" style="width: 100.0%; height: 100.0%;">Plant_name:Cumberland Plant annual net generation (MWh): 10362082 Plant state abbreviation: TN</div>`)[0];
+                popup_0bd12054df3f48658809c679c7aecdfe.setContent(html_868570a2e1ab433c1a046b4c288ce08a);
+            
+        
+
+        marker_79be3f3eb1cab3dcbc689d6baa73c873.bindPopup(popup_0bd12054df3f48658809c679c7aecdfe)
+        ;
+
+        
+    
+    
+            var marker_042e33af116615c4b5fa15dce006ae86 = L.marker(
+                [41.7378, -108.7875],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_4dd29d69332f8d8ab8fcac860f457697 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_396f386c2de2515627fd6a1759357db1 = $(`<div id="html_396f386c2de2515627fd6a1759357db1" style="width: 100.0%; height: 100.0%;">Plant_name:Jim Bridger Plant annual net generation (MWh): 10342840 Plant state abbreviation: WY</div>`)[0];
+                popup_4dd29d69332f8d8ab8fcac860f457697.setContent(html_396f386c2de2515627fd6a1759357db1);
+            
+        
+
+        marker_042e33af116615c4b5fa15dce006ae86.bindPopup(popup_4dd29d69332f8d8ab8fcac860f457697)
+        ;
+
+        
+    
+    
+            var marker_db0308a1f88ca60f0ed11f75636e6e24 = L.marker(
+                [29.9172, -96.7506],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_615884f72bdecca9bcbb86a7d75931a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_024155b40d5e8ad12ba6fb46404e8847 = $(`<div id="html_024155b40d5e8ad12ba6fb46404e8847" style="width: 100.0%; height: 100.0%;">Plant_name:Sam Seymour Plant annual net generation (MWh): 10281366 Plant state abbreviation: TX</div>`)[0];
+                popup_615884f72bdecca9bcbb86a7d75931a6.setContent(html_024155b40d5e8ad12ba6fb46404e8847);
+            
+        
+
+        marker_db0308a1f88ca60f0ed11f75636e6e24.bindPopup(popup_615884f72bdecca9bcbb86a7d75931a6)
+        ;
+
+        
+    
+    
+            var marker_726b6d94d10d07b25b82659248dd7332 = L.marker(
+                [40.2522, -80.6486],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_9ef04febcc7dd51d2932e9b84b12a0a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2105288ee7709bd9b29d4bcee42391c = $(`<div id="html_f2105288ee7709bd9b29d4bcee42391c" style="width: 100.0%; height: 100.0%;">Plant_name:Cardinal Plant annual net generation (MWh): 10066943 Plant state abbreviation: OH</div>`)[0];
+                popup_9ef04febcc7dd51d2932e9b84b12a0a9.setContent(html_f2105288ee7709bd9b29d4bcee42391c);
+            
+        
+
+        marker_726b6d94d10d07b25b82659248dd7332.bindPopup(popup_9ef04febcc7dd51d2932e9b84b12a0a9)
+        ;
+
+        
+    
+    
+            var marker_b3c9829387ec5821cebb8f13d89053eb = L.marker(
+                [45.8831, -106.614],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_f38efd30df184b56bb42428184b868e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a84ae2c71787544632c1f346cc42a7fa = $(`<div id="html_a84ae2c71787544632c1f346cc42a7fa" style="width: 100.0%; height: 100.0%;">Plant_name:Colstrip Plant annual net generation (MWh): 10010332 Plant state abbreviation: MT</div>`)[0];
+                popup_f38efd30df184b56bb42428184b868e6.setContent(html_a84ae2c71787544632c1f346cc42a7fa);
+            
+        
+
+        marker_b3c9829387ec5821cebb8f13d89053eb.bindPopup(popup_f38efd30df184b56bb42428184b868e6)
+        ;
+
+        
+    
+    
+            var marker_69ce3a03dc64447e787cf9e42d325794 = L.marker(
+                [44.2806, -87.5369],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_78befd8d21556c3bd624137446a60c99 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9fbc858de7a51a6f07594932858d71bb = $(`<div id="html_9fbc858de7a51a6f07594932858d71bb" style="width: 100.0%; height: 100.0%;">Plant_name:Point Beach Nuclear Plant Plant annual net generation (MWh): 9969968 Plant state abbreviation: WI</div>`)[0];
+                popup_78befd8d21556c3bd624137446a60c99.setContent(html_9fbc858de7a51a6f07594932858d71bb);
+            
+        
+
+        marker_69ce3a03dc64447e787cf9e42d325794.bindPopup(popup_78befd8d21556c3bd624137446a60c99)
+        ;
+
+        
+    
+    
+            var marker_1353c98bb9d998e0eb8625832b1e1703 = L.marker(
+                [42.899167, -70.848889],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_3e2ae74ede77169e775b954a50b2b129 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61b7b99f014998cbd833f1cb9df12d64 = $(`<div id="html_61b7b99f014998cbd833f1cb9df12d64" style="width: 100.0%; height: 100.0%;">Plant_name:Seabrook Plant annual net generation (MWh): 9856117 Plant state abbreviation: NH</div>`)[0];
+                popup_3e2ae74ede77169e775b954a50b2b129.setContent(html_61b7b99f014998cbd833f1cb9df12d64);
+            
+        
+
+        marker_1353c98bb9d998e0eb8625832b1e1703.bindPopup(popup_3e2ae74ede77169e775b954a50b2b129)
+        ;
+
+        
+    
+    
+            var marker_d0f487ced01929b83b39c4a135c8be67 = L.marker(
+                [27.0536, -80.5628],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_5e9882299e960b731431e4056e804e71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_869f65ff7e397f3fa05ee67e655a59ec = $(`<div id="html_869f65ff7e397f3fa05ee67e655a59ec" style="width: 100.0%; height: 100.0%;">Plant_name:Martin Plant annual net generation (MWh): 9842372.047 Plant state abbreviation: FL</div>`)[0];
+                popup_5e9882299e960b731431e4056e804e71.setContent(html_869f65ff7e397f3fa05ee67e655a59ec);
+            
+        
+
+        marker_d0f487ced01929b83b39c4a135c8be67.bindPopup(popup_5e9882299e960b731431e4056e804e71)
+        ;
+
+        
+    
+    
+            var marker_7bef0b85bf1f0860515b5ffcb22c2e2d = L.marker(
+                [26.6967, -81.7831],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_707993bf0bc129affd147a01236f98b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51aa3180894726861e74fcc9037a6d84 = $(`<div id="html_51aa3180894726861e74fcc9037a6d84" style="width: 100.0%; height: 100.0%;">Plant_name:Fort Myers Plant annual net generation (MWh): 9841677 Plant state abbreviation: FL</div>`)[0];
+                popup_707993bf0bc129affd147a01236f98b3.setContent(html_51aa3180894726861e74fcc9037a6d84);
+            
+        
+
+        marker_7bef0b85bf1f0860515b5ffcb22c2e2d.bindPopup(popup_707993bf0bc129affd147a01236f98b3)
+        ;
+
+        
+    
+    
+            var marker_4b2a50b9b89b5a0eb4b637d2d9a0fc71 = L.marker(
+                [29.995267, -90.471581],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_9f690b0f2bf3c5812d9c16106f8f7f36 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ab59e1d902764804a4eccde74a80f4d = $(`<div id="html_8ab59e1d902764804a4eccde74a80f4d" style="width: 100.0%; height: 100.0%;">Plant_name:Waterford 3 Plant annual net generation (MWh): 9806799 Plant state abbreviation: LA</div>`)[0];
+                popup_9f690b0f2bf3c5812d9c16106f8f7f36.setContent(html_8ab59e1d902764804a4eccde74a80f4d);
+            
+        
+
+        marker_4b2a50b9b89b5a0eb4b637d2d9a0fc71.bindPopup(popup_9f690b0f2bf3c5812d9c16106f8f7f36)
+        ;
+
+        
+    
+    
+            var marker_7a8f4eb2ca6af3522b4a755d14c90d69 = L.marker(
+                [41.8006, -81.1439],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_50c6158d90f6ef011c59e591f4568f3d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2d974f82cf31501274e15281af19c6d = $(`<div id="html_c2d974f82cf31501274e15281af19c6d" style="width: 100.0%; height: 100.0%;">Plant_name:Perry Plant annual net generation (MWh): 9703868 Plant state abbreviation: OH</div>`)[0];
+                popup_50c6158d90f6ef011c59e591f4568f3d.setContent(html_c2d974f82cf31501274e15281af19c6d);
+            
+        
+
+        marker_7a8f4eb2ca6af3522b4a755d14c90d69.bindPopup(popup_50c6158d90f6ef011c59e591f4568f3d)
+        ;
+
+        
+    
+    
+            var marker_f7747cbd649803784803e909f7abef2a = L.marker(
+                [38.5731, -82.7833],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_ea965f4c984296b7b5affd9cb3d6f66e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51db9f1ec019a35308e6d4988e8c7274 = $(`<div id="html_51db9f1ec019a35308e6d4988e8c7274" style="width: 100.0%; height: 100.0%;">Plant_name:Hanging Rock Power Company LLC Plant annual net generation (MWh): 9510071 Plant state abbreviation: OH</div>`)[0];
+                popup_ea965f4c984296b7b5affd9cb3d6f66e.setContent(html_51db9f1ec019a35308e6d4988e8c7274);
+            
+        
+
+        marker_f7747cbd649803784803e909f7abef2a.bindPopup(popup_ea965f4c984296b7b5affd9cb3d6f66e)
+        ;
+
+        
+    
+    
+            var marker_6da4e7398250b16151bb5b65cd092c97 = L.marker(
+                [34.1256, -84.9222],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_c30638c8e7a4c1b7310a69d25667d7b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ffd5abfffd688cd8ab54c2bf2d668d29 = $(`<div id="html_ffd5abfffd688cd8ab54c2bf2d668d29" style="width: 100.0%; height: 100.0%;">Plant_name:Bowen Plant annual net generation (MWh): 9452106 Plant state abbreviation: GA</div>`)[0];
+                popup_c30638c8e7a4c1b7310a69d25667d7b5.setContent(html_ffd5abfffd688cd8ab54c2bf2d668d29);
+            
+        
+
+        marker_6da4e7398250b16151bb5b65cd092c97.bindPopup(popup_c30638c8e7a4c1b7310a69d25667d7b5)
+        ;
+
+        
+    
+    
+            var marker_91c509f057956cb4157fbce22c11e2a5 = L.marker(
+                [41.9631, -83.2581],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_16dd0b30ccc05fc5f3688c7b791dfc20 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_066fc558ac07ed1909ed8b6280fd7e05 = $(`<div id="html_066fc558ac07ed1909ed8b6280fd7e05" style="width: 100.0%; height: 100.0%;">Plant_name:Fermi Plant annual net generation (MWh): 9369366 Plant state abbreviation: MI</div>`)[0];
+                popup_16dd0b30ccc05fc5f3688c7b791dfc20.setContent(html_066fc558ac07ed1909ed8b6280fd7e05);
+            
+        
+
+        marker_91c509f057956cb4157fbce22c11e2a5.bindPopup(popup_16dd0b30ccc05fc5f3688c7b791dfc20)
+        ;
+
+        
+    
+    
+            var marker_6178527acfb7b83e955c7d67f0d85ac3 = L.marker(
+                [39.1747, -111.0289],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_ebe84d2f788d30666d81aa1023cdb771 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d037aff998ff3967bea142a55c246b8 = $(`<div id="html_4d037aff998ff3967bea142a55c246b8" style="width: 100.0%; height: 100.0%;">Plant_name:Hunter Plant annual net generation (MWh): 9248963 Plant state abbreviation: UT</div>`)[0];
+                popup_ebe84d2f788d30666d81aa1023cdb771.setContent(html_4d037aff998ff3967bea142a55c246b8);
+            
+        
+
+        marker_6178527acfb7b83e955c7d67f0d85ac3.bindPopup(popup_ebe84d2f788d30666d81aa1023cdb771)
+        ;
+
+        
+    
+    
+            var marker_57f49f0be303d99c3266ecf7e34a7d59 = L.marker(
+                [38.372222, -87.765833],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_dabda58d2100b1cb9f548e09d3993fba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1a8af3b501009facf6d222bd1b68aa9 = $(`<div id="html_e1a8af3b501009facf6d222bd1b68aa9" style="width: 100.0%; height: 100.0%;">Plant_name:Gibson Plant annual net generation (MWh): 9230440 Plant state abbreviation: IN</div>`)[0];
+                popup_dabda58d2100b1cb9f548e09d3993fba.setContent(html_e1a8af3b501009facf6d222bd1b68aa9);
+            
+        
+
+        marker_57f49f0be303d99c3266ecf7e34a7d59.bindPopup(popup_dabda58d2100b1cb9f548e09d3993fba)
+        ;
+
+        
+    
+    
+            var marker_c9fafd7e745368a3219cd663e86e0d04 = L.marker(
+                [45.3808, -93.8931],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_20aa2fd860d1d0a3db495ca7bb5e264e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96850052f4745bbc2b07f0d3103c8101 = $(`<div id="html_96850052f4745bbc2b07f0d3103c8101" style="width: 100.0%; height: 100.0%;">Plant_name:Sherburne County Plant annual net generation (MWh): 9201847 Plant state abbreviation: MN</div>`)[0];
+                popup_20aa2fd860d1d0a3db495ca7bb5e264e.setContent(html_96850052f4745bbc2b07f0d3103c8101);
+            
+        
+
+        marker_c9fafd7e745368a3219cd663e86e0d04.bindPopup(popup_20aa2fd860d1d0a3db495ca7bb5e264e)
+        ;
+
+        
+    
+    
+            var marker_62c00b8e3e936691ec9218a817eb4664 = L.marker(
+                [27.634167, -80.791111],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_104c78570cb63e65d9230d8157c0e240 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aff539d85bcb6188e2fea703bd8637f0 = $(`<div id="html_aff539d85bcb6188e2fea703bd8637f0" style="width: 100.0%; height: 100.0%;">Plant_name:Okeechobee Clean Energy Center Plant annual net generation (MWh): 9175823 Plant state abbreviation: FL</div>`)[0];
+                popup_104c78570cb63e65d9230d8157c0e240.setContent(html_aff539d85bcb6188e2fea703bd8637f0);
+            
+        
+
+        marker_62c00b8e3e936691ec9218a817eb4664.bindPopup(popup_104c78570cb63e65d9230d8157c0e240)
+        ;
+
+        
+    
+    
+            var marker_acec73352636b687b3434a64727c0b55 = L.marker(
+                [44.622, -92.6333],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_98d1b767b01682c8167ccd3ec7319471 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec1a0e3bcbd22e252d9deab6e52934b9 = $(`<div id="html_ec1a0e3bcbd22e252d9deab6e52934b9" style="width: 100.0%; height: 100.0%;">Plant_name:Prairie Island Plant annual net generation (MWh): 9099913 Plant state abbreviation: MN</div>`)[0];
+                popup_98d1b767b01682c8167ccd3ec7319471.setContent(html_ec1a0e3bcbd22e252d9deab6e52934b9);
+            
+        
+
+        marker_acec73352636b687b3434a64727c0b55.bindPopup(popup_98d1b767b01682c8167ccd3ec7319471)
+        ;
+
+        
+    
+    
+            var marker_068ae70534504f2224c1a99eb918e919 = L.marker(
+                [39.4666, -75.5377],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_c376c81f177bf7c57b2159bef2446500 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e4441625055f07cfbe605552d1b2ff1 = $(`<div id="html_9e4441625055f07cfbe605552d1b2ff1" style="width: 100.0%; height: 100.0%;">Plant_name:PSEG Hope Creek Generating Station Plant annual net generation (MWh): 9080057 Plant state abbreviation: NJ</div>`)[0];
+                popup_c376c81f177bf7c57b2159bef2446500.setContent(html_9e4441625055f07cfbe605552d1b2ff1);
+            
+        
+
+        marker_068ae70534504f2224c1a99eb918e919.bindPopup(popup_c376c81f177bf7c57b2159bef2446500)
+        ;
+
+        
+    
+    
+            var marker_c30fbce84cc53e27bf78b5fd4cdf09c5 = L.marker(
+                [38.5847, -85.4117],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_850350e017de262857e39e03d1748094 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e23b241c1a64d31e007f49869cb64261 = $(`<div id="html_e23b241c1a64d31e007f49869cb64261" style="width: 100.0%; height: 100.0%;">Plant_name:Trimble County Plant annual net generation (MWh): 9061141.998 Plant state abbreviation: KY</div>`)[0];
+                popup_850350e017de262857e39e03d1748094.setContent(html_e23b241c1a64d31e007f49869cb64261);
+            
+        
+
+        marker_c30fbce84cc53e27bf78b5fd4cdf09c5.bindPopup(popup_850350e017de262857e39e03d1748094)
+        ;
+
+        
+    
+    
+            var marker_882c56254dafd0b078388b8812a32577 = L.marker(
+                [28.8419, -81.3256],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_e227e9afa7e1ede93400212af3afcab1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_488cb2f712d6ffea8219b829506b0bc1 = $(`<div id="html_488cb2f712d6ffea8219b829506b0bc1" style="width: 100.0%; height: 100.0%;">Plant_name:Sanford Plant annual net generation (MWh): 9045077 Plant state abbreviation: FL</div>`)[0];
+                popup_e227e9afa7e1ede93400212af3afcab1.setContent(html_488cb2f712d6ffea8219b829506b0bc1);
+            
+        
+
+        marker_882c56254dafd0b078388b8812a32577.bindPopup(popup_e227e9afa7e1ede93400212af3afcab1)
+        ;
+
+        
+    
+    
+            var marker_f6c4e6c8a0fc442f4fac0c676f956d04 = L.marker(
+                [32.7563, -96.4916],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_5ff431e7ef6a6833961d51d07e13058a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74cb5c8e6ec01c9304cc4f348b4554af = $(`<div id="html_74cb5c8e6ec01c9304cc4f348b4554af" style="width: 100.0%; height: 100.0%;">Plant_name:Forney Power Plant Plant annual net generation (MWh): 9027722 Plant state abbreviation: TX</div>`)[0];
+                popup_5ff431e7ef6a6833961d51d07e13058a.setContent(html_74cb5c8e6ec01c9304cc4f348b4554af);
+            
+        
+
+        marker_f6c4e6c8a0fc442f4fac0c676f956d04.bindPopup(popup_5ff431e7ef6a6833961d51d07e13058a)
+        ;
+
+        
+    
+    
+            var marker_9a55d24210396d22c1f7d99694d63ff9 = L.marker(
+                [36.2811, -80.0603],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_3a70e666152ba3a56bab6dd87bd96d39 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a0ea94d61c47be2c711f38ef45d634f = $(`<div id="html_6a0ea94d61c47be2c711f38ef45d634f" style="width: 100.0%; height: 100.0%;">Plant_name:Belews Creek Plant annual net generation (MWh): 9010016 Plant state abbreviation: NC</div>`)[0];
+                popup_3a70e666152ba3a56bab6dd87bd96d39.setContent(html_6a0ea94d61c47be2c711f38ef45d634f);
+            
+        
+
+        marker_9a55d24210396d22c1f7d99694d63ff9.bindPopup(popup_3a70e666152ba3a56bab6dd87bd96d39)
+        ;
+
+        
+    
+    
+            var marker_6e63786a5840fc31b9e5748fa3ebb0ee = L.marker(
+                [47.377743, -101.157058],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_e58b4c6f241dd2f42f374fde38eb197e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67ef90d170e087b531e31166083af2ae = $(`<div id="html_67ef90d170e087b531e31166083af2ae" style="width: 100.0%; height: 100.0%;">Plant_name:Coal Creek Plant annual net generation (MWh): 8971018 Plant state abbreviation: ND</div>`)[0];
+                popup_e58b4c6f241dd2f42f374fde38eb197e.setContent(html_67ef90d170e087b531e31166083af2ae);
+            
+        
+
+        marker_6e63786a5840fc31b9e5748fa3ebb0ee.bindPopup(popup_e58b4c6f241dd2f42f374fde38eb197e)
+        ;
+
+        
+    
+    
+            var marker_ffaa48c83f3d6c44ffd7f2c9b669184f = L.marker(
+                [36.765, -77.713889],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_03bc937b13d690d9c735ba8b81dc5643 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dbe50ff4c0acb89ea8dc7e7716610a46 = $(`<div id="html_dbe50ff4c0acb89ea8dc7e7716610a46" style="width: 100.0%; height: 100.0%;">Plant_name:Brunswick County Power Station Plant annual net generation (MWh): 8671856 Plant state abbreviation: VA</div>`)[0];
+                popup_03bc937b13d690d9c735ba8b81dc5643.setContent(html_dbe50ff4c0acb89ea8dc7e7716610a46);
+            
+        
+
+        marker_ffaa48c83f3d6c44ffd7f2c9b669184f.bindPopup(popup_03bc937b13d690d9c735ba8b81dc5643)
+        ;
+
+        
+    
+    
+            var marker_c3a78f43e0276046df10bb560669fa88 = L.marker(
+                [32.3478, -81.1817],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_2fd8f189e05d049025d61e4bd389b830 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8bbbe589fe31ddcfa928bc59b591db3 = $(`<div id="html_a8bbbe589fe31ddcfa928bc59b591db3" style="width: 100.0%; height: 100.0%;">Plant_name:McIntosh Combined Cycle Facility Plant annual net generation (MWh): 8586543 Plant state abbreviation: GA</div>`)[0];
+                popup_2fd8f189e05d049025d61e4bd389b830.setContent(html_a8bbbe589fe31ddcfa928bc59b591db3);
+            
+        
+
+        marker_c3a78f43e0276046df10bb560669fa88.bindPopup(popup_2fd8f189e05d049025d61e4bd389b830)
+        ;
+
+        
+    
+    
+            var marker_b76183f4ee3fdc4cb3c3c408486b330d = L.marker(
+                [38.23926, -95.68978],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_bbc39f70fb2a4ffff41768aeaa1f5056 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8af84700c973e262493fce3381c57d0c = $(`<div id="html_8af84700c973e262493fce3381c57d0c" style="width: 100.0%; height: 100.0%;">Plant_name:Wolf Creek Generating Station Plant annual net generation (MWh): 8574732 Plant state abbreviation: KS</div>`)[0];
+                popup_bbc39f70fb2a4ffff41768aeaa1f5056.setContent(html_8af84700c973e262493fce3381c57d0c);
+            
+        
+
+        marker_b76183f4ee3fdc4cb3c3c408486b330d.bindPopup(popup_bbc39f70fb2a4ffff41768aeaa1f5056)
+        ;
+
+        
+    
+    
+            var marker_74820d7c539515fa077b35ac23111710 = L.marker(
+                [39.5522, -92.6381],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_0b590605aa636dcc3255f8e5db5212d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6138d443738a86890c84217dfa447f15 = $(`<div id="html_6138d443738a86890c84217dfa447f15" style="width: 100.0%; height: 100.0%;">Plant_name:Thomas Hill Energy Center Plant annual net generation (MWh): 8568259 Plant state abbreviation: MO</div>`)[0];
+                popup_0b590605aa636dcc3255f8e5db5212d9.setContent(html_6138d443738a86890c84217dfa447f15);
+            
+        
+
+        marker_74820d7c539515fa077b35ac23111710.bindPopup(popup_0b590605aa636dcc3255f8e5db5212d9)
+        ;
+
+        
+    
+    
+            var marker_890190f5421b43e77883879d27627d77 = L.marker(
+                [46.4711, -119.3339],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_da6516451f97ba1b2944f85da7641699 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4953df593f86915ae222cc4f5b35132e = $(`<div id="html_4953df593f86915ae222cc4f5b35132e" style="width: 100.0%; height: 100.0%;">Plant_name:Columbia Generating Station Plant annual net generation (MWh): 8511288 Plant state abbreviation: WA</div>`)[0];
+                popup_da6516451f97ba1b2944f85da7641699.setContent(html_4953df593f86915ae222cc4f5b35132e);
+            
+        
+
+        marker_890190f5421b43e77883879d27627d77.bindPopup(popup_da6516451f97ba1b2944f85da7641699)
+        ;
+
+        
+    
+    
+            var marker_4212eb1857d3916ad1575eec1908b45c = L.marker(
+                [27.6058, -82.3456],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_8b6a62dd657c3e29a0536ec1060cda27 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33b0f10b21291378fa34bf3fed475ad3 = $(`<div id="html_33b0f10b21291378fa34bf3fed475ad3" style="width: 100.0%; height: 100.0%;">Plant_name:Manatee Plant annual net generation (MWh): 8457022 Plant state abbreviation: FL</div>`)[0];
+                popup_8b6a62dd657c3e29a0536ec1060cda27.setContent(html_33b0f10b21291378fa34bf3fed475ad3);
+            
+        
+
+        marker_4212eb1857d3916ad1575eec1908b45c.bindPopup(popup_8b6a62dd657c3e29a0536ec1060cda27)
+        ;
+
+        
+    
+    
+            var marker_ac94542299a8dabec8d0790a017fcf57 = L.marker(
+                [38.7, -83.8181],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_e35d672b9cf76e4cd09d0f3b3b8e6501 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7722efe5e1104ffc75789e7b4a13f30 = $(`<div id="html_d7722efe5e1104ffc75789e7b4a13f30" style="width: 100.0%; height: 100.0%;">Plant_name:H L Spurlock Plant annual net generation (MWh): 8428929 Plant state abbreviation: KY</div>`)[0];
+                popup_e35d672b9cf76e4cd09d0f3b3b8e6501.setContent(html_d7722efe5e1104ffc75789e7b4a13f30);
+            
+        
+
+        marker_ac94542299a8dabec8d0790a017fcf57.bindPopup(popup_e35d672b9cf76e4cd09d0f3b3b8e6501)
+        ;
+
+        
+    
+    
+            var marker_6f82ba4c86cefcc86aab8da4e5526b92 = L.marker(
+                [40.1719, -88.8339],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_ac70e121788eb164c0051802dc86b844 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8779d2e20da6ce137fda906867e146ab = $(`<div id="html_8779d2e20da6ce137fda906867e146ab" style="width: 100.0%; height: 100.0%;">Plant_name:Clinton Power Station Plant annual net generation (MWh): 8348706 Plant state abbreviation: IL</div>`)[0];
+                popup_ac70e121788eb164c0051802dc86b844.setContent(html_8779d2e20da6ce137fda906867e146ab);
+            
+        
+
+        marker_6f82ba4c86cefcc86aab8da4e5526b92.bindPopup(popup_ac70e121788eb164c0051802dc86b844)
+        ;
+
+        
+    
+    
+            var marker_86d7f3253c95052cb972e45011cb837a = L.marker(
+                [39.286453, -96.117231],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_cedaf1f03d15d8784e457f14c87f138c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99c187718c922cad972c13988b28cd94 = $(`<div id="html_99c187718c922cad972c13988b28cd94" style="width: 100.0%; height: 100.0%;">Plant_name:Jeffrey Energy Center Plant annual net generation (MWh): 8340406 Plant state abbreviation: KS</div>`)[0];
+                popup_cedaf1f03d15d8784e457f14c87f138c.setContent(html_99c187718c922cad972c13988b28cd94);
+            
+        
+
+        marker_86d7f3253c95052cb972e45011cb837a.bindPopup(popup_cedaf1f03d15d8784e457f14c87f138c)
+        ;
+
+        
+    
+    
+            var marker_bb60f338ab497c54eb02ecab395a65af = L.marker(
+                [33.0606, -83.8075],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_594ad083bf3f57fcc982ff8db0bacdc9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6afaaa1906947ace481b943c881db45 = $(`<div id="html_b6afaaa1906947ace481b943c881db45" style="width: 100.0%; height: 100.0%;">Plant_name:Scherer Plant annual net generation (MWh): 8339312 Plant state abbreviation: GA</div>`)[0];
+                popup_594ad083bf3f57fcc982ff8db0bacdc9.setContent(html_b6afaaa1906947ace481b943c881db45);
+            
+        
+
+        marker_bb60f338ab497c54eb02ecab395a65af.bindPopup(popup_594ad083bf3f57fcc982ff8db0bacdc9)
+        ;
+
+        
+    
+    
+            var marker_60e707066deec8473ae6f990a529925c = L.marker(
+                [42.108889, -104.8825],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_9c74564ce556d3b878b1b482a4d2e832 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_839979c0d92da0825bb4e2cbfab67c78 = $(`<div id="html_839979c0d92da0825bb4e2cbfab67c78" style="width: 100.0%; height: 100.0%;">Plant_name:Laramie River Plant annual net generation (MWh): 8314552 Plant state abbreviation: WY</div>`)[0];
+                popup_9c74564ce556d3b878b1b482a4d2e832.setContent(html_839979c0d92da0825bb4e2cbfab67c78);
+            
+        
+
+        marker_60e707066deec8473ae6f990a529925c.bindPopup(popup_9c74564ce556d3b878b1b482a4d2e832)
+        ;
+
+        
+    
+    
+            var marker_a7621dcc1319137cee30e6863807ea76 = L.marker(
+                [38.5281, -87.2525],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_4553ae798827dedea13941a990b87f7e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_329fb569997643618b21db0e915bae39 = $(`<div id="html_329fb569997643618b21db0e915bae39" style="width: 100.0%; height: 100.0%;">Plant_name:IPL - Petersburg Generating Station Plant annual net generation (MWh): 8305555 Plant state abbreviation: IN</div>`)[0];
+                popup_4553ae798827dedea13941a990b87f7e.setContent(html_329fb569997643618b21db0e915bae39);
+            
+        
+
+        marker_a7621dcc1319137cee30e6863807ea76.bindPopup(popup_4553ae798827dedea13941a990b87f7e)
+        ;
+
+        
+    
+    
+            var marker_893f9b38c6d5413bb4fd2f72b5d25a96 = L.marker(
+                [42.910296, -86.20074],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_77bd272421f2666006f0a66986ddaa64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75ec7f4e4199b931483f396d1a0829aa = $(`<div id="html_75ec7f4e4199b931483f396d1a0829aa" style="width: 100.0%; height: 100.0%;">Plant_name:J H Campbell Plant annual net generation (MWh): 8271415 Plant state abbreviation: MI</div>`)[0];
+                popup_77bd272421f2666006f0a66986ddaa64.setContent(html_75ec7f4e4199b931483f396d1a0829aa);
+            
+        
+
+        marker_893f9b38c6d5413bb4fd2f72b5d25a96.bindPopup(popup_77bd272421f2666006f0a66986ddaa64)
+        ;
+
+        
+    
+    
+            var marker_92b10065bfbda640c390f3cdd326f4f4 = L.marker(
+                [34.8392, -79.7406],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_19b5701351d69ab6c77d82bf85fee997 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b80c3748a7d7f09a3d0c0c137503c7b = $(`<div id="html_3b80c3748a7d7f09a3d0c0c137503c7b" style="width: 100.0%; height: 100.0%;">Plant_name:Richmond County Plant Plant annual net generation (MWh): 8266519 Plant state abbreviation: NC</div>`)[0];
+                popup_19b5701351d69ab6c77d82bf85fee997.setContent(html_3b80c3748a7d7f09a3d0c0c137503c7b);
+            
+        
+
+        marker_92b10065bfbda640c390f3cdd326f4f4.bindPopup(popup_19b5701351d69ab6c77d82bf85fee997)
+        ;
+
+        
+    
+    
+            var marker_c685b5cb30a0deba5f1917d7ef769e68 = L.marker(
+                [27.9072, -82.4231],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_b2a02b5502d4c5649dfbaa30bace4c40 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bfc746ee0911cc2334e4323e06a05a93 = $(`<div id="html_bfc746ee0911cc2334e4323e06a05a93" style="width: 100.0%; height: 100.0%;">Plant_name:Bayside Power Station Plant annual net generation (MWh): 8239486 Plant state abbreviation: FL</div>`)[0];
+                popup_b2a02b5502d4c5649dfbaa30bace4c40.setContent(html_bfc746ee0911cc2334e4323e06a05a93);
+            
+        
+
+        marker_c685b5cb30a0deba5f1917d7ef769e68.bindPopup(popup_b2a02b5502d4c5649dfbaa30bace4c40)
+        ;
+
+        
+    
+    
+            var marker_bc0399f7e51da6cdea3ee19edb305856 = L.marker(
+                [38.131248, -90.263157],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_29b5b96f7cdd6f176d81f75c0105ea30 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61f0f02ddb5797dff53b085d36305fbf = $(`<div id="html_61f0f02ddb5797dff53b085d36305fbf" style="width: 100.0%; height: 100.0%;">Plant_name:Rush Island Plant annual net generation (MWh): 8203992 Plant state abbreviation: MO</div>`)[0];
+                popup_29b5b96f7cdd6f176d81f75c0105ea30.setContent(html_61f0f02ddb5797dff53b085d36305fbf);
+            
+        
+
+        marker_bc0399f7e51da6cdea3ee19edb305856.bindPopup(popup_29b5b96f7cdd6f176d81f75c0105ea30)
+        ;
+
+        
+    
+    
+            var marker_ce5bece04df052eae6c220da314dd01a = L.marker(
+                [38.2081, -104.5747],
+                {}
+            ).addTo(marker_cluster_e8eaaf8feb04490889f1550f8786cbba);
+        
+    
+        var popup_876a95b134027c447a9ae81967239060 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f70fa42af135a15e09a1dd36caed9f8f = $(`<div id="html_f70fa42af135a15e09a1dd36caed9f8f" style="width: 100.0%; height: 100.0%;">Plant_name:Comanche (470) Plant annual net generation (MWh): 8175602 Plant state abbreviation: CO</div>`)[0];
+                popup_876a95b134027c447a9ae81967239060.setContent(html_f70fa42af135a15e09a1dd36caed9f8f);
+            
+        
+
+        marker_ce5bece04df052eae6c220da314dd01a.bindPopup(popup_876a95b134027c447a9ae81967239060)
+        ;
+
+        
+    
+    
+                marker_cluster_e8eaaf8feb04490889f1550f8786cbba.addTo(map_a572ad2d1153e5b9a7cda2c22338c85f);
+</script>
+</html>
